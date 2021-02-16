@@ -37,11 +37,42 @@
   </head>
   <body class="animate__animated animate__fadeIn">
     <div class="container-fluid">
-      <header id="header"></header>
+      <div class="row">
+        <!-- menu laterale -->
+        <aside class="col-2 side-menu" id="sideMenu"></aside>
 
-      <main id="main"></main>
+        <!-- pagina principale -->
+        <main class="col-10 main-showcase" id="main">
+          <nav class="navbar navbar-light bg-transparent justify-content-between">
+            <!-- immagine utente -->
+            <div class="prev-next-btns">
+              <a href="#" class="mr-2"></a><i class="fas fa-chevron-left rounded-circle "></i></a>
+              <a href="#" ></a><i class="fas fa-chevron-right rounded-circle"></i></a>
+            </div>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle rounded-pill p-0 pr-3"
+                type="button"
+                id="userMenu"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img id="userImg" class="rounded-circle mr-3" src="https://picsum.photos/45/45?random=2"></img>
+                <span id="userName" class="d-none d-md-inline-block">Ardi Germenji</span>
+              </button>
+              <div class="dropdown-menu bg-dark" aria-labelledby="userMenu">
+                <a class="dropdown-item text-white" href="#">Action</a>
+                <a class="dropdown-item text-white" href="#">Another action</a>
+                <a class="dropdown-item text-white" href="#">Something else here</a>
+              </div>
+            </div>
+          </nav>
+        </main>
 
-      <footer id="footer"></footer>
+        <!-- now playing -->
+        <footer class="col-12 music-player" id="player"></footer>
+      </div>
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script

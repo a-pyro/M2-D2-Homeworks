@@ -48,3 +48,25 @@ body {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
+
+#aside,
+#userMenu {
+  background: #000;
+}
+
+#main {
+  background: var(--clr-dark);
+}
+#footer {
+  background: rgb(24, 24, 24);
+}
+
+i {
+  color: grey;
+  font-weight: lighter;
+  background: #000;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px !important;
+}
