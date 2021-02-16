@@ -70,7 +70,9 @@ const albums = [
   'https://i.scdn.co/image/ab67616d00004851ce85d297fc24805972bd8df1',
 ];
 
-const cards = document.querySelectorAll('.card-img-top');
-cards.forEach(
+const cardsImgs = document.querySelectorAll('.card-img-top');
+cardsImgs.forEach(
   (img) => (img.src = albums[Math.floor(Math.random() * albums.length)])
 );
+const cardsTitles = document.querySelectorAll('.card-title');
+cardsTitles.forEach((title) => (title.innerText = 'random album'));
