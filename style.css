@@ -49,16 +49,20 @@ body {
   backdrop-filter: blur(10px);
 }
 
-#aside,
+#userImg {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: -1px;
+}
+
+#sideMenu,
 #userMenu {
   background: #000;
 }
 
 #main {
   background: var(--clr-dark);
-}
-#footer {
-  background: rgb(24, 24, 24);
 }
 
 i {
@@ -71,6 +75,34 @@ i {
   line-height: 30px !important;
 }
 
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .card-text {
   color: gray;
+}
+
+.card {
+  transition: 0.1s;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+#player {
+  height: 10vh;
+  background: rgb(24, 24, 24);
+
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  #main > nav > div.dropdown.show > div {
+    left: unset !important;
+    right: 0 !important;
+  }
 }

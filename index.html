@@ -39,11 +39,13 @@
     <div class="container-fluid">
       <div class="row">
         <!-- menu laterale -->
-        <aside class="col-2 side-menu" id="sideMenu"></aside>
+        <aside class="col-2 side-menu" id="sideMenu">
+          <p></p>
+        </aside>
 
         <!-- pagina principale -->
         <main class="col-10 main-showcase" id="main">
-          <nav class="navbar navbar-light bg-transparent justify-content-between pl-0">
+          <nav class="navbar navbar-light bg-transparent justify-content-between pl-0 sticky-top">
             <!-- immagine utente -->
             <div class="prev-next-btns mr-auto">
               <a href="#" class="mr-2"></a><i class="fas fa-chevron-left rounded-circle "></i></a>
@@ -51,14 +53,14 @@
             </div>
             <div class="dropdown">
               <button
-                class="btn btn-secondary dropdown-toggle rounded-pill p-0 pr-3"
+                class="btn btn-secondary dropdown-toggle dropleft rounded-pill p-0 pr-3"
                 type="button"
                 id="userMenu"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <img id="userImg" class="rounded-circle mr-3" src="https://picsum.photos/45/45?random=2"></img>
+                <img id="userImg" class="rounded-circle mr-3" src="https://i.scdn.co/image/ab6775700000ee85822c8e43c2b458715575b1f2"></img>
                 <span id="userName" class="d-none d-md-inline-block">Ardi Germenji</span>
               </button>
               <div class="dropdown-menu bg-dark" aria-labelledby="userMenu">
@@ -70,13 +72,17 @@
           </nav>
 
           <section class="my-2">
-            <!-- ascoltati di recente -->
+
             <section class="ascoltati-recente">
               <h5 class="font-weight-bold">Ascoltati di recente</h5>
               <div class="row">
                 <div class="col-12 col-md-4 col-lg-2 mb-2">
                   <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                    <div>
+                      <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+
+                    </div>
+
                     <div class="card-body p-0 mt-2">
                       <h6 class="card-title">Green day</h6>
                       <p class="card-text">Bla bla bla</p>
