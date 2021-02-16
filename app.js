@@ -71,8 +71,13 @@ const albums = [
 ];
 
 const cardsImgs = document.querySelectorAll('.card-img-top');
-cardsImgs.forEach(
-  (img) => (img.src = albums[Math.floor(Math.random() * albums.length)])
-);
+cardsImgs.forEach((img, idx) => {
+  img.src = albums[Math.floor(Math.random() * albums.length)];
+  setTimeout(() => {
+    img
+      .closest('.card')
+      .classList.add('animate__animated', 'animate__fadeInUp');
+  }, (idx + 1 * 15) * 5 ** 2);
+});
 const cardsTitles = document.querySelectorAll('.card-title');
 cardsTitles.forEach((title) => (title.innerText = 'random album'));
