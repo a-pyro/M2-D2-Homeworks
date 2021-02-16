@@ -95,14 +95,31 @@ i {
 #player {
   height: 10vh;
   background: rgb(24, 24, 24);
-
   position: fixed;
   bottom: 0;
+}
+
+p {
+  font-size: 0.6rem;
+}
+#sideMenu {
+  /* flex: 0 0 25em !important; */
+  flex: unset;
+  width: 9rem !important;
+  max-width: unset;
+}
+#main {
+  flex: unset;
+  width: calc(100vw - 180px) !important;
 }
 
 @media (max-width: 768px) {
   #main > nav > div.dropdown.show > div {
     left: unset !important;
     right: 0 !important;
+  }
+
+  .card {
+    width: 350px !important;
   }
 }
